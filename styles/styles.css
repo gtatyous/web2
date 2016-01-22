@@ -26,7 +26,7 @@ a {
 li a {
   display : inline-block;
   padding : 14px;
-  float : left;
+  float : right;
   background-color: #f1f1f1;
 }
 
@@ -41,7 +41,7 @@ li a.active {
   color: white;
 }
 
-.home_main_pic {
+.big_pic {
   padding-left: 200px;
   padding-right: 0;
   padding-top: 0;
@@ -50,7 +50,7 @@ li a.active {
 
 .main_block {
   margin : 0;
-  padding-left: 120px;
+  padding-left: 110px;
   padding-top: 50px;
   padding-right: 0;
   padding-bottom: 70px;
@@ -59,8 +59,8 @@ li a.active {
 .main_menu{
   list-style-type : none;
   margin : 0;
-  padding-left : 500px;
-  padding-right: 0;
+  padding-left : 0;
+  padding-right: 110px;
   padding-top: 40px;
   padding-bottom: 0;
 }
