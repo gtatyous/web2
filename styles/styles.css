@@ -1,10 +1,13 @@
 body {
+  margin : 350px;
   
 }
 
 h1 {
   color: green;
   text-align: center;
+  font-size: 300%;
+  font-family: courier;
 }
 
 h2 {
@@ -12,4 +15,32 @@ h2 {
 }
 p {
   color:black;
+}
+
+a {
+  text-decoration : none;
+  target : 
+}
+ul {
+  list-style-type : none;
+  margin : 0;
+  padding : 0;
+}
+
+li a {
+  display : inline-block;
+  padding : 8px;
+  float : left;
+  background-color: #f1f1f1;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
 }
