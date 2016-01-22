@@ -1,12 +1,12 @@
 body {
-  margin : 350px;
-  
+  margin : 0;
+  font-size : 16px;
 }
 
 h1 {
   color: green;
   text-align: center;
-  font-size: 300%;
+  font-size: 350%;
   font-family: courier;
 }
 
@@ -15,21 +15,17 @@ h2 {
 }
 p {
   color:black;
+  margin:0;
+  padding:0;
 }
 
 a {
   text-decoration : none;
-  target : 
-}
-ul {
-  list-style-type : none;
-  margin : 0;
-  padding : 0;
 }
 
 li a {
   display : inline-block;
-  padding : 8px;
+  padding : 14px;
   float : left;
   background-color: #f1f1f1;
 }
@@ -43,4 +39,28 @@ li a:hover {
 li a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.home_main_pic {
+  padding-left: 200px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main_block {
+  margin : 0;
+  padding-left: 120px;
+  padding-top: 50px;
+  padding-right: 0;
+  padding-bottom: 70px;
+}
+
+.main_menu{
+  list-style-type : none;
+  margin : 0;
+  padding-left : 500px;
+  padding-right: 0;
+  padding-top: 40px;
+  padding-bottom: 0;
 }
