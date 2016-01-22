@@ -23,43 +23,31 @@ p {
   padding:0;
 }
 
-a {
-  text-decoration : none;
-}
-
 /********************************************************
- * lists
+ * links
  ********************************************************/
-/*li a {
-  display : inline-block;
-  padding : 10px;
-  float : right;
+a.dropdown {
+  text-decoration : none;
   color : black;
 }
 
-li a:hover {
-  background-color: #555;
-  color: white;
+a.active {
+  text-decoration : none;
+  color : white;
 }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}*/
+a.dropdown:hover {
+  color : white;
+  font-weight : bold;
+}
+
 
 /********************************************************
  * big_pic: home webpage center pic 
  * main_block: heading of the page styling
  * main menu: unorder list styling for main menue 
  ********************************************************/ 
-.big_pic {
-  padding-left: 200px;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.main_block {
+div.main_block {
   margin : 0;
   padding-left: 110px;
   padding-top: 50px;
@@ -67,7 +55,11 @@ li a.active {
   padding-bottom: 50px; /* adds space between top_page and next text */
 }
 
-.main_menu {
+
+/********************************************************
+ * unorder list
+ ********************************************************/
+ul.main_menu {
   list-style-type : none;
   margin : 0;
   position : relative; /* main block top:50px*/
@@ -77,7 +69,7 @@ li a.active {
   padding-bottom: 0;
 }
 
-.dropdown {
+li.dropdown {
   background-color : white;
   font-weight : normal;
   font-size : 16px;
@@ -85,11 +77,11 @@ li a.active {
   position : relative;
   cursor :pointer;
         /*top right bottom left*/
-  padding: 3px 3px 3px 3px; /*background color around text*/
+  padding: 4px 4px 4px 4px; /*background color around text*/
   margin: 0px 7px 7px 0px; /*spaces between li*/
 }
 
-.active {
+li.active {
   color : white;
   background-color: rgb(0,100,0); /* Dark Green */
   font-weight : normal;
@@ -98,11 +90,11 @@ li a.active {
   position : relative;
   cursor :pointer;
         /*top right bottom left*/
-  padding: 3px 3px 3px 3px; /*background color around text*/
+  padding: 4px 4px 4px 4px; /*background color around text*/
   margin: 0px 7px 7px 0px; /*spaces between li*/
 }
 
-.dropdown:hover {
+li.dropdown:hover {
   background-color: rgb(0,100,0); /* Dark Green */
   color : white;
   font-weight : bold;
@@ -112,16 +104,17 @@ li a.active {
 button.not(:active) {
   color : red;
   background-color : black;
+}*/
+
+/********************************************************
+ * tools
+ ********************************************************/
+.big_pic {
+  padding-left: 200px;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-*/
-
-/********************************************************
- ********************************************************/
-
-
-/********************************************************
- ********************************************************/
-
 
 /********************************************************
  * Extra tools
