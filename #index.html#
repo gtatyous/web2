@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+  <head>
+    <link rel="icon" href="./pics/favicons/blackcat.png" type="image/png" sizes="32x32" /> 
+    <title>
+      Team 17
+</title:q
+   >
+  </head>
+
+  <body>
+  
+  
+    <h1><b>
+      ECE480 Senior Design--Spring 2016
+    </b></h1>
+    
+    
+    <p title= "Members and Roles:">
+      - Yujie Hao       (M)    <br>
+      - Craig Stoddard  (P)    <br>
+      - Anishpal Gill   (L)    <br>
+      - Anna Little     (M)    <br>
+      - Ian Bacus       (D)    <br>
+      - Yousef Gtat     (W)    <br>
+    </p>
+    
+    <p>
+      We meet at <time>11:10AM</time> every Friday (TBA)
+    </p>
+
+    <p>
+      ECE480 Webpage <a href="http://www.egr.msu.edu/classes/ece480/capstone/">HERE</a>
+    </p>
+    
+    
+    <p>
+      <a href="./pics/cutecat.jpg">
+        <img
+          src="./pics/cutecat.jpg"
+          alt="Image can't load..."
+          width="600"
+          height="400"
+          align="middle"
+          >
+      </a>
+    </p>
+    
+    
+    <p>
+      Team progress:
+      <progress
+        value="10" max="100">
+      </progress> <br>
+      Email us: <a href="mailto:capstone.msu@gmail.com">Team 17</a>  <br>
+      Visit us at: <a href="http://cat-bounce.com"> cat-bounce.com</a> <br>
+      
+    </p>
+    
+  </body>
+
+</>
