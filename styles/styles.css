@@ -29,11 +29,13 @@ p {
 a.dropdown {
   text-decoration : none;
   color : black;
+  padding: 4px 4px 4px 4px; /*background color around text*/
 }
 
 a.active {
   text-decoration : none;
   color : white;
+  padding: 4px 4px 4px 4px; /*background color around text*/
 }
 
 a.dropdown:hover {
@@ -75,7 +77,7 @@ li.dropdown {
   font-size : 16px;
   float : right;
   position : relative;
-  cursor :pointer;
+  /*cursor :pointer;*/
         /*top right bottom left*/
   padding: 4px 4px 4px 4px; /*background color around text*/
   margin: 0px 7px 7px 0px; /*spaces between li*/
@@ -88,7 +90,7 @@ li.active {
   font-size : 16px;
   float : right;
   position : relative;
-  cursor :pointer;
+  /*cursor :pointer;*/
         /*top right bottom left*/
   padding: 4px 4px 4px 4px; /*background color around text*/
   margin: 0px 7px 7px 0px; /*spaces between li*/
