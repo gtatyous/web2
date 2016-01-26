@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  position : relative;
   color: green;
   text-align: center;
   font-size: 350%;
@@ -26,50 +27,26 @@ p {
 /********************************************************
  * links
  ********************************************************/
-a.dropdown {
-  text-decoration : none;
-  color : black;
-  padding: 4px 4px 4px 4px; /*background color around text*/
-}
-
-a.active {
-  text-decoration : none;
-  color : white;
-  padding: 4px 4px 4px 4px; /*background color around text*/
-}
-
-a.dropdown:hover {
-  color : white;
-  font-weight : bold;
-}
-
 
 /********************************************************
- * big_pic: home webpage center pic 
  * main_block: heading of the page styling
- * main menu: unorder list styling for main menue 
  ********************************************************/ 
 div.main_block {
   margin : 0;
-  padding-left: 110px;
-  padding-top: 50px;
-  padding-right: 0;
-  padding-bottom: 50px; /* adds space between top_page and next text */
+  padding: 50px 50px 110px 50px; /* adds space between top_page and next text */
 }
 
+div.main_menu {
+  position : relative; /* main block top:50px*/
+  float : right;
+  padding: 50px;
+  margin : 0 0 0 0;
+}
 
 /********************************************************
  * unorder list
  ********************************************************/
-ul.main_menu {
-  list-style-type : none;
-  margin : 0;
-  position : relative; /* main block top:50px*/
-  padding-left : 0;
-  padding-right: 110px;
-  padding-top: 60px;
-  padding-bottom: 0;
-}
+
 
 li.dropdown {
   background-color : white;
@@ -96,10 +73,11 @@ li.active {
   margin: 0px 7px 7px 0px; /*spaces between li*/
 }
 
-li.dropdown:hover {
-  background-color: rgb(0,100,0); /* Dark Green */
+/*li.dropdown:hover {
+  position : relative;
+  background-color: rgb(0,100,0); /* Dark Green
   color : white;
-  font-weight : bold;
+  font-weight : bold;*/
 }
 
 /* does not work
@@ -112,11 +90,74 @@ button.not(:active) {
  * tools
  ********************************************************/
 .big_pic {
-  padding-left: 200px;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  position:relative;
+  float:middle;
+  display:block;
+  margin:auto;
+  text-align:center;
+  left:100px;
 }
+
+/********************************************************
+ * dropdown content
+ ********************************************************/
+.dropdown {
+  position : relative;
+  display: inline-block;
+}
+
+.dropdown_button {
+  /*float : left;*/
+  position : relative;
+  margin: 0px 7px 7px 0px; /*spaces between li*/
+  text-decoration : none;
+  font-size : 16px;
+  color : black;
+  background-color: white;
+  padding: 4px 4px 4px 4px; /*background color around text*/
+ }
+
+.active_button {
+  /*float : left;*/
+  margin: 0px 7px 7px 0px; /*spaces between li*/
+  text-decoration : none;
+  font-size : 16px;
+  color : white;
+  background-color: rgb(0,100,0); /* Dark Green */
+  padding: 4px 4px 4px 4px; /*background color around text*/
+}
+
+.dropdown_content {
+  display: none;
+  position : absolute;
+  z-index : 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown_content a {
+  color : black;
+  padding : 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown_content{
+  display : inline-block;
+}
+
+.dropdown:hover .dropdown_button {
+  color : white;
+  background-color: rgb(0,100,0); /* Dark Green */
+  font-weight : bold;
+}
+
+.dropdown_content a:hover {
+  background-color: #f1f1f1; 
+  font-weight : bold;
+}
+
 
 /********************************************************
  * Extra tools
