@@ -3,6 +3,7 @@
  ********************************************************/
 body {
   margin : 0;
+  padding : 0;
   font-size : 16px;
 }
 
@@ -20,9 +21,19 @@ h2 {
 
 p {
   color:black;
-  margin:0;
-  padding:0;
 }
+
+pre {
+  padding : 5px;
+  margin : 0;
+  font-size: 16px;
+}
+hr.header {
+  position : relative;
+  margin-top: 125px;
+  box-shadow: 0 0 10px 1px black;
+}
+
 
 /********************************************************
  * links
@@ -31,9 +42,19 @@ p {
 /********************************************************
  * main_block: heading of the page styling
  ********************************************************/ 
-div.main_block {
+div.page_top {
+  position : fixed;
+  background-color: white;
+  /*display : block;*/
   margin : 0;
-  padding: 50px 50px 110px 50px; /* adds space between top_page and next text */
+  z-index: 100;
+  padding: 50px; /* adds space between top_page and next text */
+}
+
+div.page_content {
+  position : absolute;
+  padding : 110px 50px 50px 50px; 
+  margin : 110px 50px 50px 50px; 
 }
 
 div.main_menu {
@@ -132,13 +153,14 @@ button.not(:active) {
   position : absolute;
   z-index : 1;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding-top: 20px;
 }
 
 .dropdown_content a {
   color : black;
-  padding : 12px 16px;
+  padding : 8px 16px;
   text-decoration: none;
   display: block;
 }
@@ -149,8 +171,13 @@ button.not(:active) {
 
 .dropdown:hover .dropdown_button {
   color : white;
+  font-size: 20px;
   background-color: rgb(0,100,0); /* Dark Green */
   font-weight : bold;
+}
+
+.dropdown:hover .active_button {
+  font-size: 20px;
 }
 
 .dropdown_content a:hover {
