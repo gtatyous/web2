@@ -28,12 +28,6 @@ pre {
   margin : 0;
   font-size: 16px;
 }
-hr.header {
-  position : relative;
-  margin-top: 125px;
-  box-shadow: 0 0 10px 1px black;
-}
-
 
 /********************************************************
  * links
@@ -44,24 +38,49 @@ hr.header {
  ********************************************************/ 
 div.page_top {
   position : fixed;
+  display: inline-block;
+  width : 100%;  /*fills in the entire screen*/
   background-color: white;
-  /*display : block;*/
   margin : 0;
   z-index: 100;
-  padding: 50px; /* adds space between top_page and next text */
-}
-
-div.page_content {
-  position : absolute;
-  padding : 110px 50px 50px 50px; 
-  margin : 110px 50px 50px 50px; 
+  float : center; 
+  /*padding : 20px 0px 0px 50px;
+  /*text-align : middle;
+   *clear : right;
+   *display: inline-block;
+   * */
 }
 
 div.main_menu {
-  position : relative; /* main block top:50px*/
+  position : relative; /*relative to page_top block*/
   float : right;
-  padding: 50px;
+  padding: 60px 20px 0 0;
   margin : 0 0 0 0;
+}
+
+
+div.main_pic {
+  position : relative; /*relative to page_top block*/
+  float : left;
+  padding: 0 0 0 20px;
+  margin : 0 0 0 0;
+}
+
+hr.main_line {
+  position : fixed;
+  margin-top: 125px;
+  display: inline-block;
+  width : 100%;  /*fills in the entire screen*/
+
+  box-shadow: 0 0 10px 1px black;
+}
+
+
+
+div.page_content {
+  position : absolute;
+  padding : 80px 50px 50px 50px; 
+  margin : 80px 50px 50px 50px; 
 }
 
 /********************************************************
