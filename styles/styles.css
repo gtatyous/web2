@@ -62,25 +62,29 @@ div.main_menu {
 div.main_pic {
   position : relative; /*relative to page_top block*/
   float : left;
-  padding: 0 0 0 20px;
+  padding: 0px;
   margin : 0 0 0 0;
 }
 
-hr.main_line {
-  position : fixed;
-  margin-top: 125px;
+div.main_line {
+  position : relative;
+  margin-top: 10px;
   display: inline-block;
   width : 100%;  /*fills in the entire screen*/
-
-  box-shadow: 0 0 10px 1px black;
+  background-color: white;
 }
 
 
+hr.heading {
+  box-shadow: 0 0 10px 1px black;
+}
 
 div.page_content {
-  position : absolute;
-  padding : 80px 50px 50px 50px; 
-  margin : 80px 50px 50px 50px; 
+  position : relative;
+  display: inline-block;
+  width : 100%;  /*fills in the entire screen*/
+  padding : 100px 0px 0px 0px; 
+  /*margin : 80px 50px 50px 50px;*/
 }
 
 /********************************************************
