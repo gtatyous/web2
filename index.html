@@ -1,110 +1,1180 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-  <head>
-    <link rel="icon" href="./pics/favicons/blackcat.png" type="image/png" sizes="32x32" /> 
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title> Team 17</title>
-    <meta charset="UTF-8">
-  </head>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>ECE 480 Team 1</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-  <body>
-    <div class="page_top">
-      <a class="main_pic"  href="#">
-        <img
-         src="./pics/MSU_logo_white.png"
-         alt="Image can't load..."
-         width="450"
-         height="100"
-         align="left"
-         >
-      </a>
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-      <div class="main_menu">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/media-queries.css">         
 
-        <div class="dropdown">
-          <a class="active_button" href="#">HOME </a>
-          <div class="dropdown_content">
-            <a href="#"> Link1 </a><br>
-            <a href="#"> Link2 </a><br>
-            <a href="#"> Link3 </a><br>
-          </div>
-        </div>          
- 
-        <div class="dropdown">
-          <a class="dropdown_button" href="team.html">TEAM </a>
-          <div class="dropdown_content">
-            <a href="./profiles/jo.html"> Yujie Hao (M)</a>
-            <a href="./profiles/craig.html"> Craig Stoddard (P) </a>
-            <a href="./profiles/anish.html"> Anishpal Gill (L) </a>
-            <a href="./profiles/anna.html"> Anna Little (M) </a>
-            <a href="./profiles/ian.html"> Ian Bacus (D) </a>
-            <a href="./profiles/yousef.html"> Yousef Gtat (W)</a>          
-          </div>
-        </div>
+   <!-- Script
+   =================================================== -->
+	<script src="js/modernizr.js"></script>
 
-        <div class="dropdown">
-          <a class="dropdown_button" href="projects.html">PROJECTS</a>
-          <div class="dropdown_content">
-            <a href="#"> Link1 </a><br>
-            <a href="#"> Link2 </a><br>
-            <a href="#"> Link3 </a><br>
-          </div>
-        </div>
-    
-        <div class="dropdown">
-          <a class="dropdown_button" href="sponsors.html">SPONSORS</a>
-          <div class="dropdown_content">
-            <a href="#"> Link1 </a><br>
-            <a href="#"> Link2 </a><br>
-            <a href="#"> Link3 </a><br>
-          </div>
-        </div>
-  
-        <div class="dropdown">
-          <a class="dropdown_button" href="about.html">ABOUT</a>
-          <div class="dropdown_content">
-            <a href="#"> Link1 </a><br>
-            <a href="#"> Link2 </a><br>
-            <a href="#"> Link3 </a><br>
-          </div>
-        </div>
-    
-        <div class="dropdown">
-          <a class="dropdown_button" href="contact.html">CONTACT</a>
-          <div class="dropdown_content">
-            <a href="#"> Link1 </a><br>
-            <a href="#"> Link2 </a><br>
-            <a href="#"> Link3 </a><br>
-          </div>
-        </div>
-      </div> 
+   <!-- Favicons
+	=================================================== -->
+	<link rel="shortcut icon" href="" >  <!-- Change this steph-->
 
-      <div class="main_line">
-        <hr class="heading">
+</head>
+
+<body class="homepage">
+
+   <div id="preloader"> 
+	   <div id="status">
+         <img src="images/loader.gif" height="60" width="60" alt="">
+         <div class="loader">Loading...</div>
       </div>
-    </div>       
-  
-        <div class="page_content">       
-      <h1><b> Senior Design SS2016 - Team 17</b></h1>
-      <h1>
-        <a href="./pics/team_pic.jpg">
-          <img
-          src="./pics/team_pic.jpg"
-          alt="Image can't load..."
-          width="1000"
-          height="800"
-          align="middle"
-          >
-        </a>
-      </h1><br><br>
-    
-      <h2> <b>Add more stuff here</b> </h2>
-      <p>
-        <a href="http://cat-bounce.com">Do you like cats?</a><br>    
-        </a><br>
-      </p>
-    </div>
-  </body>
+   </div>
+   
+
+   <!-- Header
+   =================================================== -->
+   <header id="main-header">
+
+   	<div class="row header-inner">
+
+	     
+		 <div class="logo">
+	         <a class="smoothscroll" href="#hero"> EGR</a>
+	      </div>
+			
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class='menu-text'>Show Menu</span>
+	         	<span class="menu-icon"></span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class='menu-text'>Hide Menu</span>
+         		<span class="menu-icon"></span>
+         	</a>         
+
+	         <ul id="nav" class="nav">
+	            <li class="current"><a class="smoothscroll" href="#hero">Home.</a></li>
+		         <li><a class="smoothscroll" href="#portfolio">Problem.</a></li>
+	            <li><a class="smoothscroll" href="#services">Project.</a></li>
+	            <li><a class="smoothscroll" href="#about">Team.</a></li>
+	            <li><a class="smoothscroll" href="#journal">Documents.</a></li>	            
+	            <li><a class="smoothscroll" href="#contact">Thanks.</a></li>
+	         </ul> 
+
+	      </nav> <!-- /nav-wrap -->	      
+
+	   </div> <!-- /header-inner -->
+
+   </header> 
+
+
+   <!-- Hero
+   =================================================== -->
+   <section id="hero">	
+   	  
+		<div class="row hero-content">
+
+			<div class="twelve columns flex-container">										   
+
+				<div id="hero-slider" class="flexslider">
+				   <ul class="slides">
+
+					   <!-- Slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 >ECE 480 Team 1 Presents a self cleaning surgical tool. See the process of creating this innovative tool.</h1>	
+								<p><a class="button stroke smoothscroll" href="#services">See The Project</a></p>									   
+							</div>					
+					   </li>
+
+					   <!-- Slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1>Behind every innovation is a group of talented young minds. Meet the team who made it all happen.</h1>	
+								<p><a class="button stroke smoothscroll" href="#about">More About Us</a></p>																   
+							</div>						
+					   </li>
+
+					   <!-- Slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 >Interested in the design details and specifications? Take a look at the technical proposals.</h1>
+								<p><a class="button stroke smoothscroll" href="#journal">Read the Documents</a></p>										   
+							</div>
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- .flexslider -->				   
+
+	      </div> <!-- .flex-container -->      
+
+		</div> <!-- .hero-content -->	   
+
+   </section> <!-- #hero -->
+
+
+   <!-- Portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+	         <h1>The Problem Statement<span>.</span></h1>
+
+	         <hr />
+
+	         <p>Surgical Site Infections (SSI) occur at the location where the surgery was performed and can be a result of unsanitary surgical settings and practices. 
+			 These infections can lead to extended hospitalization, treatment, and even death.  In a study conducted by the Center for Disease Control (CDC) in the 
+			 United States from 2006-2008, there were over 16,000 surgical site infections which equated to an overall rate of 1.9% of all operative procedures. 
+			 However, the prevalence of these infections drastically increases when compared with underdeveloped countries. Surgical operations in these 
+			 countries are often conducted in unhygienic settings which are conducive to the growth of bacteria and disease. Without a sterile surgical environment, the 
+			 patient is put at higher risk of infection which could lead to a significantly longer recovery time or death.
+	         </p>
+
+	      </div>
+<!--
+      </div>
+
+      <div class="row items">
+
+      	<div class="twelve columns">
+
+            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+          	   <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/grizzly.jpg" alt="Grizzly">
+                        <div class="overlay"></div>                       
+                        <div class="portfolio-item-meta">
+          					      <h5>Grizzly</h5>
+                              <p>Photography</p>
+          					</div>                         
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Hotel Sign</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid stack item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/beetle.jpg" alt="Beetle">                        
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Beetle</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Banjo Player</h5>
+                              <p>Videography</p>
+          					   </div>
+                        </div>                       
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                     	<img src="images/portfolio/coffee.jpg" alt="Coffee Cup">
+                       	<div class="overlay">
+                       		<div class="portfolio-item-meta">
+          					      <h5>Coffee Cup</h5>
+                              <p>Photography</p>
+          					   </div>
+                       	</div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/farmerboy.jpg" alt="Farmerboy">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Farmerboy</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">                        
+                        <img src="images/portfolio/judah.jpg" alt="Judah">                       
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Judah</h5>
+                              <p>Web Design</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item 
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="portfolio.html">
+                        <img src="images/portfolio/embossed-paper.jpg" alt="Embossed Paper">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Embossed Paper</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>                                                
+                     </a>                   
+
+                  </div>
+          		</div>  <!-- item end 
+
+            </div> <!-- /portfolio-wrapper 
+
+         </div> <!-- /twelve -->
+
+      </div>  <!-- /row -->
+	  
+      
+   </section> <!-- /Portfolio -->
+
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+	
+
+   		<div class="twelve columns">
+
+	         <h1>The Project Proposal<span>.</span></h1>
+
+	         <hr />
+
+	         <p>The goal of this project is to develop a surgical tool which would be continuously suffused with an anti-microbial solution, 
+			 administered through a series of micro-channels . The solution will diffuse throughout the tool effectively 
+			 creating a coating across the surface. This will prevent the growth of bacteria on the tool itself, which comes in direct contact with the patient.
+			 This is critical to the safety of the patient and will greatly minimize the chances of infection to occur. The tool is to be suffused with the 
+			 solution for the duration of the surgery. This means that even while the tool is not in use, the surface will still be disinfected despite any
+			 bacteria present in the surgical environment. The tool developed will be of great assistance to surgeons performing in unsanitary environments. 
+
+	         </p>
+
+         </div>
+		 
+		 <div class="twelve columns">
+
+	         <h1>The Design<span>.</span></h1>
+
+	         <hr />
+
+			 <p>
+			 An air compressor powered by a battery will inflate a pressure infusion bag encasing an IV 
+			 bag containing the antimicrobial.  The increase in pressure will cause the flow-rate to increase. The antimicrobial will then be 
+			 transported to the surgical tool through tubing and flow through micro-channels 
+			 to deliver the desired fluid to the surface of the tool.  The system will be controlled by a phone application which will communicate to
+			 the microcontroller via Bluetooth connection. The microcontrolelr will receive feedback from a pressure sensor and use 
+			 these values to maintain the proper pressure for complete suffusion.
+
+			 </p>
+	         <p>The design of the self-suffusing tool is composed of four main parts. 
+			 A power supply section, the feedback sensor, the pressure infusion bag, and the tool itself. 
+			 Each section plays an integral role in the success of the tool and is described below.
+
+
+	         </p>
+			 <div class="service-list">
+			 <h3>POWER SUPPLY</h3>
+			 </div>
+			 
+			 <img src="images/team/ps.jpg" alt=""> 
+			 
+			 <p>The design implements two power regulators, the LM2940 and LM3940. The LM2940
+			converts the 9 volt battery voltage to provide a five volt output while the LM3940 creates a 3.3
+			volt output from a 5 volt input. The 3.3 volt regulator provides the power to the microcontroller
+			and the pressure sensor. Due to the size of current microcontrollers, the power requirements
+			have dropped from the traditional 5 volts to a lower 3.3 volts to prevent damage to the
+			components. While this decrease in size is welcomed, careful consideration must be taken to
+			ensure the 3.3 volt components are not fed any higher voltage than what they require. The 5 volt
+			regulator provides the motor with the power it requires to provide the pressure bag with
+			sufficient air pressure for operation.
+			</p>
+
+			<div class="service-list">
+			 <h3> SENSOR AND MICROCONTROLLER</h3>
+			 </div>
+			 
+			 <img src="images/team/test.jpg" alt="">   
+						
+			 <p>The RFD22102 RFDuino Dip is a low energy BLE RF module with built-in ARM Cortex M0
+			Microcontroller for rapid development and prototyping projects. It is a very small board, about
+			the size of a fingertip, and is completely compatible with the Arduino interface.The RFduino can be programmed using the Arduino IDE
+			This microcontroller was chosen specifically for its low energy usage and its Bluetooth
+			capabilities. It is also small in size and will allow for a compact system.
+			</p>
+			
+			<img src="images/team/sensor.jpg" alt="">   
+			
+			<p>The Honeywell Board-Mount Sensor SMT is a digital pressure sensor that is utilized in the system to monitor the pressure of 
+			of the fluid entering the tool. An integral part to the system, the sensor feeds back to the microcontroller, allowing the system to adjust
+			the pressure to the desired quantity.
+			<div class="service-list">
+			 <h3> PRESSURE AND THE PUMP</h3>
+			 </div>
+			 
+			 <img src="images/team/pressure.jpg" alt="">  
+			 
+			 <p>
+			 The design calls for a  way to control the flow rate of the antimicrobial into the tool. To do this a pressure infusion bag was implemented.
+			 The pressure infusion bag encases the bag of antimicrobials, increasing the pressure of the fluid when inflated. This increase
+			 in pressure causes the flow rate of the fluid into the tool to increase as well. Therefore the flow rate can be controlled 
+			 by the inflation and deflation of the pressure bag. The pressure bag is inflated by an air compressor. Both parts are extremely in-expensive,
+			 keeping the cost of the system low.
+			 
+			 <div class="service-list">
+			 <h3>SURGICAL TOOL</h3>
+			 </div>
+			 
+			 <img src="images/team/tool.jpg" alt="">  
+			 
+			 <p>The surgical tool created was the Adson thumb forceps,
+				which are capable of continuously suffusing antimicrobials, increasing the cleanliness of the
+				surface of the tool. This will be implemented through creating microchannels within the tool to
+				transport the antimicrobial. Once the device is designed, it can be created through the use of an
+				advanced 3D printer.
+			 The construction of the tool was achieved with the 2013 version of
+			SolidWorks. After obtaining an authentic pair of Adson thumb forceps, the dimensions were
+			copied and modified to be able to insert a microchannel system within the tool.
+			 </p>
+
+         </div>
+		 
+		 <div class="twelve columns">
+
+	         <h1>The Final Product<span>.</span></h1>
+
+	         <hr />
+
+			 <img src="images/team/final1.jpg" alt=""> 
+			 <img src="images/team/final2.jpg" alt="">
+			 
+	         <p>
+				Design Team 1 successfully created self-suffusing Adson Thumb Forceps. The system utilizes a series 
+				of microchannels to deliver the antimicrobial to the surface of the tool. It can be controlled via a 
+				smartphone application communicating through Bluetooth with the system.  It receives feedback provided
+				by the pressure sensor to ensure the correct amount of fluid is being delivered to the tool.  
+
+	         </p>
+
+         </div>
+
+      </div>
+<!--
+      <div class="row">
+
+      	<div class="twelve columns">
+
+	      	<div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+
+	      		<div class="bgrid">
+
+	               <div class="icon-part">
+	               	<span class="icon-graph"></span>
+	               </div>
+
+	               <h3>Marketing.</h3>
+
+	               <div class="service-content">	                  
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	         			</p> 
+	               </div>      
+
+	            </div> <!-- /bgrid 
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<i class="icon-film"></i>
+	               </div>
+
+	               <h3>Videography.</h3>                  
+
+	               <div class="service-content">	                  
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventoveritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	         			</p> 
+	               </div>                                 
+
+	            </div> <!-- /bgrid 
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">	               	
+	               	<i class="icon-camera"></i>
+	               </div>
+
+	               <h3>Photography.</h3>
+
+	               <div class="service-content">		                  
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	         			</p> 
+	               </div>                               
+
+	            </div> <!-- /bgrid 
+
+				   <div class="bgrid first">
+
+	              	<div class="icon-part">
+	               	<i class="icon-eye"></i>	               	
+	               </div>
+	                  
+	               <h3>Branding.</h3> 
+
+	               <div class="service-content">	                  
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	         			</p> 
+	               </div>                                 
+
+	            </div> <!-- /bgrid 
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<i class="icon-screen-desktop"></i>
+	               </div>
+	                  
+	               <h3>Web Design.</h3>
+
+	               <div class="service-content">	                  
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	         			</p> 
+	               </div>                                 
+
+	             </div> <!-- /bgrid 
+
+				   <div class="bgrid">
+
+	               <div class="icon-part">
+	               	<i class="icon-eyeglasses"></i>
+	               </div>
+
+	               <h3>Web Development.</h3>
+
+	               <div class="service-content">
+		               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	         			</p> 
+	               </div>                              
+
+	            </div> <!-- /bgrid 
+
+	      	</div> <!-- /service-list 
+
+	      </div> <!-- /twelve 
+
+      </div> <!-- /row      
+-->
+   </section> <!-- /services -->   
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Who We Are<span>.</span></h1>
+
+	         <hr />
+
+	         <p>Design Team 1 is a professional design group full of bright, young minds. Composed of five members, Design Team 1 strives to revolutionize
+				the field this life-changing project.
+	         </p>
+
+	      </div>
+
+      </div>
+
+      <div class="row">
+
+      	<div class="twelve columns">
+
+	      	<div class="service-list bgrid-third s-bgrid-half mob-bgrid-whole">
+
+	      		<div class="bgrid">
+
+	               <div class="icon-part">
+	               	<img src="images/team/Adam.jpg" alt=""/>
+	               </div>
+
+	               <h3>Adam Stowe.</h3>
+
+	               <div class="service-content">	                  
+		               <p>Adam is from Grand Rapids, Michigan. He is graduating with a degree in Electrical Engineering
+					   in May 2015. He is pending approval for a position as a Nuclear Propulsion Engineer for the United States Navy. 
+	         			</p> 
+	               </div>      
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">
+	               	<img src="images/team/Jose.jpg" alt=""/>
+	               </div>
+
+	               <h3>Jose Carmona.</h3>                  
+
+	               <div class="service-content">	                  
+		               <p>Jose, from Sturgis, Michigan is expected to graduate with a Bachelor's of Science in Electrical Engineering
+					   in December of 2015. Jose will be returning to Bosch for an internship and is looking forward to getting more experience in the field. 
+	         			</p> 
+	               </div>                                 
+
+	            </div> <!-- /bgrid -->
+
+				   <div class="bgrid">
+
+	              	<div class="icon-part">	               	
+	               	<img src="images/team/Kasey.jpg" alt=""/>
+	               </div>
+
+	               <h3>Kasey Durkin.</h3>
+
+	               <div class="service-content">		                  
+		               <p>Kasey is from Carleton, Michigan and will be graduating with a Bachelor's of Science in Electrical Engineering in May 2015. 
+					   She is very excited to have accepted a position with Eaton as a Power Systems Engineer at their New Jersey location.  
+	         			</p> 
+	               </div>                               
+
+	            </div> <!-- /bgrid -->
+			</div>
+			
+			<div id="team-wrapper" class="bgrid-half mob-bgrid-whole group">
+
+				   <div class="bgrid first">
+
+	              	<div class="icon-part">
+	               	<img src="images/team/Parker.jpg" alt=""/>	               	
+	               </div>
+	                  
+	               <h3>Parker Mojsiejenko.</h3> 
+
+	               <div class="service-content">	                  
+		               <p>Parker is from Bridgman, Michigan. He is graduating with a degree in Electrical Engineering in May 2015. 
+					   He is currently exploring career options and is extremely excited to apply his strengths in the future.
+	         			</p> 
+	               </div>                                 
+
+	            </div> <!-- /bgrid -->
+
+				   
+
+				   <div class="bgrid">
+
+	               <div class="icon-part">
+	               	<img src="images/team/Stephanie.jpg" alt=""/>
+	               </div>
+
+	               <h3>Stephanie Le.</h3>
+
+	               <div class="service-content">
+		               <p>Originally from Holt, Michigan, Stephanie plans on graduating with a Bachelor's of Science in Electrical
+					   Engineering in May 2015. She has accepted a position with Jackson National Life Insurance as a Software Developer I and
+					   looks forward to starting her new position upon completion of her degree.
+	         			</p> 
+	               </div>                              
+
+	            </div> <!-- /bgrid -->
+
+	      	</div> <!-- /service-list -->
+
+	      </div> <!-- /twelve -->
+
+      </div> <!-- /row -->     
+
+      </div> <!-- /row -->
+
+
+      <!-- team
+   	=================================================== -->
+	<!--
+   	<div id='team'>
+
+	      <div class="row team section-head">
+
+	   		<div class="twelve columns">
+
+		         <h1>Our Rockstar Team<span>.</span></h1>
+
+		         <hr />
+
+		         <p>UNDER CONSTRUCTION
+		         </p>	         
+
+		      </div>
+
+	      </div>
+
+      	<div class="row about-content">
+
+      		<div class="twelve columns">
+
+		         <div id="team-wrapper" class="bgrid-half mob-bgrid-whole group">
+
+		            <div class="bgrid member">
+
+		               <div class="member-header">
+
+		                 	<div class="member-pic">
+									<img src="images/team/member01-k.jpg" alt=""/>                        	                       	
+		                 	</div>
+
+		                  <div class="member-name">
+		                     <h3>Naruto Uzumaki</h3>
+		                     <span>Creative Director</span>
+		                  </div>
+
+		               </div>							
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		          	</div> <!-- /member 
+
+		            <div class="bgrid member">
+
+		              	<div class="member-header">
+										
+								<div class="member-pic">
+		                 		<img src="images/team/member02-k.jpg" alt=""/>                        	
+		                	</div>
+		                
+		                	<div class="member-name">
+		                   	<h3>Sasuke Uchiha</h3>
+		                   	<span>Lead Designer</span>
+		                	</div>
+
+		               </div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		       		</div> <!-- /member 
+
+		            <div class="bgrid member first">
+
+							<div class="member-header">
+							
+								<div class="member-pic">
+		                		<img src="images/team/member03-k.jpg" alt=""/>                        	
+		               	</div>
+
+		               	<div class="member-name">
+		                  	<h3>Sakura Haruno</h3>
+		                  	<span>Web Designer</span>
+		               	</div>
+
+							</div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		               nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		      		</div> <!-- /member 
+
+		            <div class="bgrid member">
+
+		            	<div class="member-header">
+										
+								<div class="member-pic">
+									<img src="images/team/member04-k.jpg" alt=""/>                        	                        	
+		                 	</div>
+
+		                  <div class="member-name">
+		                     <h3>Shikamaru Nara</h3>
+		                     <span>Web Designer</span>
+		                  </div>
+
+		               </div>
+
+		               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+		                  nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+
+		               <ul class="member-social">
+		                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+		               </ul>
+
+		            </div> <!-- /member 
+
+		         </div> <!-- /twelve 
+
+	         </div> <!-- /team-wrapper 
+
+         </div> <!-- /row 
+
+      </div> <!-- /team  
+-->	  
+
+   </section> <!-- /about -->
+
+
+   <!-- journal
+   =================================================== -->
+   <section id="journal">
+
+	   <div class="row section-head">
+
+	   	<div class="twelve columns">
+
+			   <h1>Technical Documents<span>.</span></h1>
+
+			   <hr />
+
+			   <p>The technical documents of the project are all listed below. From the Proposal to the Final Report, 
+			   read about the project from the very beginning.
+			   
+		      </p>	         
+
+		    </div>
+
+	   </div>
+	   
+
+	   <div class="row items">
+
+      	<div class="twelve columns">
+
+            <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third mob-bgrid-half group">
+
+          	   <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="Final Proposal.pdf">
+                        <img src="images/portfolio/proposal.jpg" alt="Proposal">
+                        <div class="overlay"></div>                       
+                        <div class="portfolio-item-meta">
+          					      <h5>Project Proposal</h5>
+                              <p>Design Team 1</p>
+          					</div>                         
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="APAdam.pdf">
+                        <img src="images/portfolio/AP Power.jpg" alt="Power Supply">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Application Notes: Power Supply</h5>
+                              <p>Adam Stowe</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid stack item">
+                  <div class="item-wrap">
+
+                     <a href="APParker.pdf">
+                        <img src="images/portfolio/Bluetooth.png" alt="Bluetooth">                        
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Application Notes: Bluetooth Connection</h5>
+                              <p>Parker Mojsiejenko</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="APKasey.pdf">
+                        <img src="images/portfolio/mf.jpg" alt="Microfluidics">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Application Notes: Microfluidics</h5>
+                              <p>Kasey Durkin</p>
+          					   </div>
+                        </div>                       
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="APJose.pdf">
+                     	<img src="images/portfolio/3p.jpg" alt="SolidWorks">
+                       	<div class="overlay">
+                       		<div class="portfolio-item-meta">
+          					      <h5>Application Notes: SolidWorks</h5>
+                              <p>Jose Carmona</p>
+          					   </div>
+                       	</div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="APStephanie.pdf">
+                        <img src="images/portfolio/pid.jpg" alt="PID">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Application Notes: A PID Controller and the RFduino</h5>
+                              <p>Stephanie Le</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="DesignIssues.pdf">                        
+                        <img src="images/portfolio/ds.jpg" alt="Design Issues">                       
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Design Issues Paper</h5>
+                              <p>Design Team 1</p>
+          					   </div>
+                        </div>                        
+                     </a>
+
+                  </div>
+          		</div> <!-- /item -->
+
+               <div class="bgrid item">
+                  <div class="item-wrap">
+
+                     <a href="FinalReport.pdf">
+                        <img src="images/portfolio/fp.jpg" alt="Final Report">
+                        <div class="overlay">
+                        	<div class="portfolio-item-meta">
+          					      <h5>Final Report</h5>
+                              <p>Design Team 1</p>
+          					   </div>
+                        </div>                                                
+                     </a>                   
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- /portfolio-wrapper--> 
+
+         </div> <!-- /twelve -->
+
+      </div>  <!-- /row -->
+<!--
+      <div class="row">
+
+      	<div class="twelve columns">
+
+	         <div id="blog-wrapper" class="bgrid-third s-bgrid-half mob-bgrid-whole group">
+
+	            <article class="bgrid">
+						
+						<h5>September 2, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
+	                           
+	               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+	               isi elit consequat ipsum, nec sagittis sem nibh id elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+	               </p>
+	                        
+	            </article>
+
+	            <article class="bgrid">
+						
+						<h5>August 29, 2014</h5>
+	               <h3><a href="single.html">Natus error sit voluptatem accusantium.</a></h3>
+	                           
+	               <p>
+	               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+	               totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+	            	</p>
+	                        
+	            </article>
+
+	            <article class="bgrid">
+						
+						<h5>August 28, 2014</h5>	
+	               <h3><a href="single.html">Ut enim ad minim veniam quis nostrud</a></h3>
+	                           
+	               <p>
+	               Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
+	               isi elit consequat ipsum, nec sagittis sem nibh id elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. 
+	            	</p>
+	                        
+	            </article>
+
+	            <article class="bgrid first">
+						
+						<h5>August 27, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
+	                           
+	               <p>
+	               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	               consequat.
+	            	</p>
+	                        
+	            </article>
+
+	            <article class="bgrid">
+						
+						<h5>August 25, 2014</h5>
+	               <h3><a href="single.html">Rerum dignissimos alias eligendi laudantium quod.</a></h3>
+	                           
+	               <p>
+	               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum fuga distinctio natus ab sint 
+	               voluptate quos cumque assumenda ipsa cupiditate aperiam officiis recusandae nemo labore adipisci harum, 
+	               ea odio dolor. 
+	            	</p>
+	                        
+	            </article>
+
+	            <article class="bgrid">
+						
+						<h5>August 23, 2014</h5>
+	               <h3><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h3>
+	                           
+	               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt cumque, aut nam at, 
+	               doloremque repellat blanditiis quo accusantium, rerum dignissimos alias eligendi, laudantium quod. 
+	               Autem nihil explicabo ipsa magnam porro.
+	            	</p>
+	                        
+	            </article>                     
+-->
+	         </div> <!-- /blog-wrapper -->
+
+	      </div> <!-- /twelve -->
+
+      </div> <!-- /row -->
+
+   </section> <!-- /blog -->
+
+   
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Acknowledgements<span>.</span></h1>
+
+	         <hr />
+
+	         <p>
+			 Design Team 1 would like to extend their gratitude to all those who helped them succeed this semester.
+	         </p>
+			 
+			 <div class="contact-list bgrid-third s-bgrid-half mob-bgrid-whole">
+
+				   <div class="bgrid">
+
+						<h3>Dr. Satish Udpa.</h3>
+
+						<div class="service-content">
+							<p>Thank you to Dr. Udpa for all his knowledge and leadership. We truly appreciate all
+							the time spent meeting with the group to discuss specifications, various design ideas and
+							progression of the project. 
+							</p> 
+						</div> 
+					</div>				   
+				   
+				   <div class="bgrid">
+
+						<h3>Dr. Wen Li.</h3>
+
+						<div class="service-content">
+							<p>Thank you Dr. Wen Li for her guidance and advice. Your positive attitude translated to the group
+							members allowing us to successfully collaborate and remain focused as a team. 
+							</p> 
+						</div> 
+					</div>
+				   
+				   <div class="bgrid">
+
+						<h3>Professors.</h3>
+
+						<div class="service-content">
+							<p>Thank you to Dr. Timothy Grotjohn and Dr. Lalita Udpa for their instruction and mentorship throughout the semester.
+							We really enjoyed our time participating in the course.
+							</p> 
+						</div> 
+					</div>
+				   
+				   <div class="bgrid">
+
+						<h3>Guest Speakers.</h3>
+
+						<div class="service-content">
+							<p>Thank you to all the guest speakers for their intelligence and direction. The knowledge shared will help us navigate
+							through life and be utilized throughout	our careers.
+							</p> 
+						</div> 
+					</div>
+					
+					<div class="bgrid">
+
+						<h3>College of Vet Med.</h3>
+
+						<div class="service-content">
+							<p>Thank you to Dr. Helene Pazak and the staff at the MSU College of Veterinary Medicine. Your assistance and
+							feedback proved a valuable tool and allowed the team to create a low cost self-suffusing surgical tool system. 
+							</p> 
+						</div> 
+					</div>
+					
+					<div class="bgrid">
+
+						<h3>ECE Shop.</h3>
+
+						<div class="service-content">
+							<p>Thank you to Roxanne Peacock and the MSU ECE shop for your continued assistance throughout the semester. We would not have been able to accomplish our goal with out your help.
+							</p> 
+						</div> 
+					</div>
+					
+			</div> 
+			
+		
+
+      </div>
+
+    </div> 
+
+   </section>  <!-- /contact-->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+         </div>
+		 <h3> Sponsored by MSU College of Engineering.</h3>
+
+         <p class="copyright">&copy; Copyright 2014 Puremedia. </a></p>        
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
+
+      </div> <!-- /row -->
+
+   </footer> <!-- /footer -->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>   
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/backstretch.js"></script> 
+   <script src="js/waypoints.js"></script>  
+   <script src="js/main.js"></script>
+
+</body>
 
 </html>
