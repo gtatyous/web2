@@ -1,6 +1,6 @@
 # web dev
 
-may need to use this command again 
+Use this command to give premisions to the rest of the files
 chmod -R a+rX ~/web
 
 
